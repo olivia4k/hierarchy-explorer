@@ -1,13 +1,116 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap");
+
+* {
+  box-sizing: border-box;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 50%;
+  height: 100vh;
+}
+
+body {
+  font-family: "Roboto Mono", sans-serif;
+  color: #252525;
+  font-weight: 400;
+  background-color: #f7f2e9;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 1px 1px 8px -3px rgba(10, 10, 10, .45);
+  padding: 1.8rem 4.8rem;
+  background-color: #fffefc;
+  border-radius: 20px;
+}
+
+
+.employee-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.8rem;
+  padding: 1.8rem;
+}
+
+.header {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+  position: relative;
+  width: 100%;
+  display: block;
+  max-width: 400px;
+}
+
+@media (max-width: 800px) {
+  .header {
+    max-width: 90%;
+  }
+}
+
+.header h1 {
+  align-self: stretch;
+}
+
+
+button,
+input,
+select {
+  background-color: #ffebb3;
+  font-family: inherit;
+  border: none;
+  border-radius: 10rem;
+  padding: 1.2rem 3.2rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  cursor: pointer;
+  text-align: left;
+}
+
+
+.active {
+  text-align: center;
+  font-weight: 700;
+}
+
+
+
+li {
+  text-align: center;
+  list-style: none;
+  border-radius: 10rem;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  min-width: 270px;
+}
+
+.arrow {
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+.special {
+  border-radius: 10rem;
+  width: 270px;
+  padding: 1.2rem 3.2rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+ul {
+  padding: 0;
 }

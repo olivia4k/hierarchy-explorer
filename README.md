@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Hierarchy Explorer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Hierarchy Explorer is a React-based web application which display employees hierarchical structure. \
+The app provides a user-friendly interface to explore organizational hierarchy for a choosen employee.
 
 ## Available Scripts
 
